@@ -3,7 +3,7 @@ public class Principal_App {
 	
 	public static void main(String[] args) {
 		
-		Password pasword1 = new Password(8);
+		Password1 pasword1 = new Password1(8);
 		
 		pasword1.generarPassword();
 		System.out.println(pasword1);

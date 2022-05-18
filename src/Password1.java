@@ -23,7 +23,7 @@ public class Password1 {
    
 	
 
-	public Password(int longitud) {
+	public Password1(int longitud) {
 		super();
 		this.longitud = longitud;
 		
@@ -71,7 +71,7 @@ public class Password1 {
 	
 	
 
-	public boolean passwordValid(Password contrasenia5) {
+	public boolean passwordValid(Password1 contrasenia5) {
 		boolean valida = false;
 		int mayuscula=0;
 		int minuscula=0;
