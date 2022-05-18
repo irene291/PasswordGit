@@ -118,6 +118,6 @@ public class Password1 {
 	public String toString() {
 		return "Password [contrasenia1=" + contrasenia1 + "]";
 	}
-	
+	//prueba
 	
 }
