@@ -14,12 +14,13 @@ public class Password1 {
 			   "K", "L", "M","N","O","P","Q","R","S","T","U","V","W", "X","Y","Z"};
 	
 	private String [] numaux= {"0","1","2","3","4","5","6","7","8","9"};
+	
+
+	
 
     private String contrasenia1;
-    
 	
-
-	
+   
 	
 
 	public Password(int longitud) {
@@ -49,14 +50,6 @@ public class Password1 {
 
 
 
-	public String[] getCaracteres() {
-		return caracteres;
-	}
-
-	public void setCaracteres(String[] caracteres) {
-		this.caracteres = caracteres;
-	}
-
 
 
 
@@ -70,9 +63,14 @@ public class Password1 {
 				contrasenia=contrasenia+caracteres[aleatorio];
 			
 		}
+		
 		contrasenia1=contrasenia;
+		
 	}
+
 	
+	
+
 	public boolean passwordValid(Password contrasenia5) {
 		boolean valida = false;
 		int mayuscula=0;
@@ -83,20 +81,26 @@ public class Password1 {
 
 			for(int i=0; i<contrasenia5.getLongitud(); i++) {
 					
+				String cara=String.valueOf(contrasenia5.getContrasenia1().charAt(i));
+				
 				for(int j=0; j<minaux.length; j++) {
-					if(contrasenia5.getCaracteres()[i].equals(minaux[j])) {
+					
+					
+					if(cara.equals(minaux[j])) {
 						minuscula++;
+					
 					}
 				}
 				for(int l=0; l<maaux.length; l++) {
-					if(contrasenia5.getCaracteres()[i].equals(maaux[l])) {
+					if(cara.equals(caracteres[l])) {
 						mayuscula++;
 					}
 					
-					for(int m=0; m<numaux.length; m++) {
-						if(contrasenia5.getCaracteres()[i].equals(numaux[m])) {
-							numero++;
-						}
+				}
+				
+				for(int m=0; m<numaux.length; m++) {
+					if(cara.equals(numaux[m])) {
+						numero++;
 					}
 				}
 			
@@ -114,7 +118,6 @@ public class Password1 {
 	public String toString() {
 		return "Password [contrasenia1=" + contrasenia1 + "]";
 	}
-	
 	
 	
 }
