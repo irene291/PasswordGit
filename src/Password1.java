@@ -1,4 +1,9 @@
 import java.util.*;
+/**
+ * 
+ * @author irene
+ *
+ */
 public class Password1 {
 
 	private int longitud;
@@ -52,7 +57,9 @@ public class Password1 {
 
 
 
-
+	/**
+	 * Metodo generar contraseña caracteres aleatorios
+	 */
 	public void generarPassword() {
 		String contrasenia = "";
 		
@@ -70,7 +77,11 @@ public class Password1 {
 
 	
 	
-
+	/**
+	 *  Clase de comprobación de carcacteres
+	 * @param contrasenia5 Contraseña generada aleatoriamente
+	 * @return boolean indicando si es valida o no
+	 */
 	public boolean passwordValid(Password1 contrasenia5) {
 		boolean valida = false;
 		int mayuscula=0;

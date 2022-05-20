@@ -1,4 +1,8 @@
-
+ /**
+  * 
+  * @author irene
+  *
+  */
 public class Password2 {
 
 	private int longitud;
@@ -38,8 +42,9 @@ public class Password2 {
 		this.contraseniaFinal = contrasenia1;
 	}
 	
-	
-
+	/**
+	 * Generar la contraseña con caracteres aleatorios
+	 */
 	public void generarPassword() {
 		String contrasenia = "";
 		
@@ -56,7 +61,11 @@ public class Password2 {
 
 	
 	
-
+	/**
+	 * Clase de comprobación de carcacteres
+	 * @param contraseniaF Contraseña generada aleatoriamente
+	 * @return boolean indicando si es valida o no
+	 */
 	public boolean passwordValid(Password2 contraseniaF) {
 		boolean valida = false;
 		int mayuscula=0;
